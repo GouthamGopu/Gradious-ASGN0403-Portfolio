@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+header{
+  display: flex;
+  padding: 25px 50px;
+  background-color: rgb(44, 16, 16);
+  color: white;
+  align-items: center;
+}
+header div{
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  gap: 4px;
+}
+.logo-img{
+  height: 28px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 320px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color:rgb(44, 16, 16);
+  color: white;
+}
+
+.icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.icons{
+  margin: 10px;
+}
+footer p{
+  font-size: 14px;
+}
+
+
+.profile-img img{
+  width: 40vw;
+  height: 90vh;
+}
+
+.main{
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.intro {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 28px;
+  font-weight: 400;
+}
