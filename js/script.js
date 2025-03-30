@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll("nav ul li a");
-  const currentPage = window.location.pathname.split("/").pop() || "";
+  let currentPage = window.location.pathname.split("/").pop();
+
+  if (currentPage === "" || currentPage === "index.html") {
+    currentPage = "index"; 
+  }
 
   links.forEach((link) => {
-    if (link.getAttribute("href").split("/").pop() === currentPage) {
+    const linkPage = link.getAttribute("href").split("/").pop() || "index";
+
+    if (linkPage === currentPage) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
