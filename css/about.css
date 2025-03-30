@@ -1,0 +1,45 @@
+
+.profile-img img{
+  width: 40vw;
+  height: 90vh;
+}
+
+.main{
+  display: flex;
+  height: 100%;
+  display: flex;
+}
+.details {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin:40px;
+}
+
+.details h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.details ul li {
+  margin-bottom: 20px;
+}
+
+.details ul li::before {
+  content: "• ";
+  color: black;
+  font-weight: bold;
+}
+
+.details p {
+  margin: 20px 0;
+}
+
+.details p strong {
+  font-weight: bold;
+}

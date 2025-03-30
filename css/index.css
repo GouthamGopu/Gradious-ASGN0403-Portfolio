@@ -1,0 +1,30 @@
+
+
+.profile-img img{
+  width: 40vw;
+  height: 90vh;
+}
+
+.main{
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.intro {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 28px;
+  font-weight: 400;
+}

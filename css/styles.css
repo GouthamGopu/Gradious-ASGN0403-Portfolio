@@ -9,7 +9,7 @@ body {
 header{
   display: flex;
   padding: 25px 50px;
-  background-color: rgb(44, 16, 16);
+  background-color: rgb(31, 17, 17);
   color: white;
   align-items: center;
 }
@@ -56,7 +56,8 @@ nav ul li a::after {
   transition: width 0.3s ease-in-out;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
@@ -67,7 +68,7 @@ footer {
   width: 100%;
   text-align: center;
   padding: 10px;
-  background-color:rgb(44, 16, 16);
+  background-color:rgb(59, 28, 28);
   color: white;
 }
 
@@ -77,39 +78,10 @@ footer {
   color: white;
   font-size: 20px;
 }
+
 .icons{
   margin: 10px;
 }
 footer p{
   font-size: 14px;
-}
-
-
-.profile-img img{
-  width: 40vw;
-  height: 90vh;
-}
-
-.main{
-  display: flex;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.intro {
-  margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.intro h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.intro p {
-  font-size: 28px;
-  font-weight: 400;
 }
